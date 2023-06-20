@@ -4,33 +4,12 @@ const dotenv = require('dotenv');
 dotenv.config();
 const scenarios = [];
 const viewports = [];
-// const relativeUrls = require('../bin/csv-reader');
-// const baseUrl =  process.env.baseUrl // Replace the value "https://example.com" by the base URL of the website you want to test. It could be your development site and you want to make sure recent changes didn't break the UI
-// const referenceUrl = process.env.referenceUrl //Optional URL, Replace the value "https://reference.com" by the reference URL of the website you want to compare with. It could be your production site.
-
-const baseUrl =  "https://rtcamp:goodwork@easyengine.rsites.rt.gw/" // Replace the value "https://example.com" by the base URL of the website you want to test. It could be your development site and you want to make sure recent changes didn't break the UI
-const referenceUrl = "https://easyengine.io/" //Optional URL, Replace the value "https://reference.com" by the reference URL of the website you want to compare with. It could be your production site.
-
-
+const relativeUrls = require('../bin/csv-reader');
 let config = []; 
 
 // Replace the values of the below array with the relative URLs of your website. E.g., "/about", "/contact", "/pricing", etc.
 // Use just "/" to test the homepage of your website.
 // Add as many relative URLs as you need.
-
-const relativeUrls = [
-  "",
-  "contact/",
-  "blog/",
-  "community/",
-  "commands/",
-  "handbook/",
-  "install/",
-  "faq/",
-  "roadmap/",
-  "about/",
-  "easyexperts/"
-];
 
 
 //If you need to add any selector specific to some URLs, you may add here 
